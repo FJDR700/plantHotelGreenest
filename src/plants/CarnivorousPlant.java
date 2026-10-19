@@ -1,6 +1,6 @@
 package plants;
 
-//Här ärver subklassen instansvariabler och -metoder från Plant-superklassen.
+//Här ärver subklassen instansvariabler och -metoder från Plant-basklassen.
 //Det inkluderar även interface-metoder som Plant-klassen har implementerat.
 public class CarnivorousPlant extends Plant {
     //Konstanter med "final" har alltid oförändbara värden.
@@ -9,7 +9,7 @@ public class CarnivorousPlant extends Plant {
     private final double BASE_LEVEL = 0.1d;
 
     public CarnivorousPlant(String name, double height, String heightUnit){
-        //Här hämtas superklassens konstruktor till subklassens med super.
+        //Här hämtas basklassens konstruktor till subklassens med super.
         super(name, height, heightUnit);
         this.type = THE_CARNIVOROUS_PLANT;
     }
