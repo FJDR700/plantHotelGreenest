@@ -8,8 +8,8 @@ class Main {
         boolean stayInHotel = true;
 
         //pottedPlants-listan lägger in fyra olika växter med varsin namn och höjd
-        ///Detta är en form av polymorfism genom arv eftersom objekten av
-        ///olika växttyper kan behandlas likadant som objekt av typen Plant.
+        ///Detta är en polymorfism (genom arv) eftersom Plant-objekten i listan kan
+        ///identifiera sig som andra växttyper såsom Cactus, Palm och CarnivorousPlant.
         pottedPlants.add(new Cactus("Igge",20, "cm"));
         pottedPlants.add(new Palm("Laura", 5, "m"));
         pottedPlants.add(new CarnivorousPlant("Meatloaf", 0.7, "m"));
@@ -24,8 +24,9 @@ class Main {
             String name = scan.nextLine().trim().toLowerCase();
 
             //Här söker fram en växt och beräknar fram dess vätskediet.
-            ///Detta utförs polymorfa anrop där växternas samma
-            ///metodanrop körs på olika sätt efter växttyp.
+            ///Med polymorfismen implementerat kan man anropa polymorft där
+            ///växternas samma metodanrop körs på olika sätt efter växttyp.
+            ///Anropets kod är kortare utan att behöva ändra eller ha kedja.
             boolean noPottetPlant = true;
             for (var plants : pottedPlants) {
                 if (plants.nameFound(name)) {
