@@ -1,6 +1,6 @@
 package plants;
 
-//Här ärver subklassen instansvariabler och -metoder från Plant-superklassen.
+//Här ärver subklassen instansvariabler och -metoder från Plant-basklassen.
 //Det inkluderar även metoder från interfacet som Plant-klassen har implementerat.
 public class Palm extends Plant {
     //Variabler och metoder med "private"
@@ -10,7 +10,7 @@ public class Palm extends Plant {
     private final String THE_PALM = "Palmen";
 
     public Palm(String name, double height, String heightUnit){
-        //Här hämtas superklassens konstruktor till subklassens med super.
+        //Här hämtas basklassens konstruktor till subklassens med super.
         super(name, height, heightUnit);
         this.type = THE_PALM;
     }
