@@ -1,6 +1,6 @@
 package plants;
 
-//Här ärver subklassen instansvariabler och -metoder från Plant-superklassen.
+//Här ärver subklassen instansvariabler och -metoder från Plant-basklassen.
 //Det inkluderar även interface-metoder som Plant-klassen har implementerat.
 public class Cactus extends Plant {
     //Konstanter med "final" har alltid oförändbara värden.
@@ -9,7 +9,7 @@ public class Cactus extends Plant {
     private final int TO_CL = 100;
 
     public Cactus(String name, double height, String heightUnit){
-        //Här hämtas superklassens konstruktor till subklassens med super.
+        //Här hämtas basklassens konstruktor till subklassens med super.
         super(name, height, heightUnit);
         this.type = THE_CACTUS;
     }
