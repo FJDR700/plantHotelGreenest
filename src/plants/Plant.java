@@ -20,7 +20,7 @@ public abstract class Plant implements FluidDiet {
         return name.equals(this.name.toLowerCase());
     }
     //En metod som ska användas av subklassers calcAmount-metod
-    //där height-variabeln konverteras till meter.
+    //där växtens höjd konverteras alltid till meter.
     protected double toMeter(){
         return switch (heightUnit) {
             case "m" -> 1; case "dm" -> 0.1d;
