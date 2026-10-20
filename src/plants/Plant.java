@@ -13,6 +13,8 @@ public abstract class Plant implements FluidDiet {
         this.height = Math.abs(height);
         this.heightUnit = heightUnit.trim();
     }
+    //Variabler och metoder med "public" kan synas
+    //och användas från vilket klass som helst.
     //En boolean-metod som ska verifiera om växtens namn är funnen.
     public boolean nameFound(String name) {
         return name.equals(this.name.toLowerCase());
@@ -25,8 +27,6 @@ public abstract class Plant implements FluidDiet {
             case "cm" -> 0.01d; default -> 0;
         };
     }
-    //Variabler och metoder med "public" kan synas
-    //och användas från vilket klass som helst.
     //De kan även hämta inkapslade värden från sina egna klasser.
     @Override
     public String toString() {
