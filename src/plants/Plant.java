@@ -27,7 +27,6 @@ public abstract class Plant implements FluidDiet {
             case "cm" -> 0.01d; default -> 0;
         };
     }
-    //De kan även hämta inkapslade värden från sina egna klasser.
     @Override
     public String toString() {
         return type + " " + name + ", " +
