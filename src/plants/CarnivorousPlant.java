@@ -13,7 +13,7 @@ public class CarnivorousPlant extends Plant {
         super(name, height, heightUnit);
         this.type = THE_CARNIVOROUS_PLANT;
     }
-    //Här överskrivs metoder från interfacet till att ha olika funktioner såsom att...
+    //Här överskrivs interface-metoder till att ha olika funktioner såsom att...
     //...beräkna fram vätskemängd genom en formel för köttätande växter.
     @Override
     public void calcAmount(){
