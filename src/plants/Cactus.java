@@ -13,7 +13,7 @@ public class Cactus extends Plant {
         super(name, height, heightUnit);
         this.type = THE_CACTUS;
     }
-    //Här överskrivs metoder från interfacet till att ha olika funktioner såsom att...
+    //Här överskrivs interface-metoder till att ha olika funktioner såsom att...
     //...beräkna fram vätskemängd genom en formel för kaktusar, oberoende av höjd.
     @Override
     public void calcAmount(){
