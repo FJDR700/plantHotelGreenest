@@ -3,8 +3,8 @@ package plants;
 //Här ärver subklassen instansvariabler och -metoder från Plant-basklassen.
 //Det inkluderar även metoder från interfacet som Plant-klassen har implementerat.
 public class Palm extends Plant {
-    //Variabler och metoder med "private"
-    //syns och används bara från sin egen klass.
+    ///Variabler och metoder med "private"
+    ///syns och används bara från sin egen klass.
     //Konstanter med "final" har alltid oförändbara värden.
     private FluidList TAP_WATER = FluidList.TAP_WATER;
     private final String THE_PALM = "Palmen";
