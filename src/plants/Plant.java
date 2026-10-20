@@ -19,8 +19,8 @@ public abstract class Plant implements FluidDiet {
     public boolean nameFound(String name) {
         return name.equals(this.name.toLowerCase());
     }
-    //En double-metod som ska användas av subklassers calcAmount-metod
-    //där height-variabeln befinner sig.
+    //En metod som ska användas av subklassers calcAmount-metod
+    //där height-variabeln konverteras till meter.
     protected double toMeter(){
         return switch (heightUnit) {
             case "m" -> 1; case "dm" -> 0.1d;
