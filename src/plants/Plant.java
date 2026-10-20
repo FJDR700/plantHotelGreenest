@@ -15,7 +15,7 @@ public abstract class Plant implements FluidDiet {
     }
     //Variabler och metoder med "public" kan synas
     //och användas från vilket klass som helst.
-    //En boolean-metod som ska verifiera om växtens namn är funnen.
+    //En metod som ska verifiera om växtens namn är funnen.
     public boolean nameFound(String name) {
         return name.equals(this.name.toLowerCase());
     }
