@@ -1,4 +1,5 @@
 package plants;
+//Samma förekomningar som Palm-klassen
 public class Cactus extends Plant {
     private FluidList MINERAL_WATER = FluidList.MINERAL_WATER;
     private final String THE_CACTUS = "Kaktusen";
