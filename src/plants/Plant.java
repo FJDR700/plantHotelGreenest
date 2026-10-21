@@ -1,5 +1,7 @@
 package plants;
+//Interface
 public abstract class Plant implements FluidDiet {
+    //Inkapsling
     protected String name, type, heightUnit;
     protected double height, fluidAmount;
 
@@ -8,6 +10,7 @@ public abstract class Plant implements FluidDiet {
         this.height = Math.abs(height);
         this.heightUnit = heightUnit.trim();
     }
+    //Inkapsling
     public boolean nameFound(String name) {
         return name.equals(this.name.toLowerCase());
     }
