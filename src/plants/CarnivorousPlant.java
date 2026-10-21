@@ -1,4 +1,5 @@
 package plants;
+//Samma förekomning som Palm-klassen
 public class CarnivorousPlant extends Plant {
     private FluidList PROTEIN_DRINK = FluidList.PROTEIN_DRINK;
     private final String THE_CARNIVOROUS_PLANT = "Köttätande växten";
