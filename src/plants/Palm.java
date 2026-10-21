@@ -8,11 +8,13 @@ public class Palm extends Plant {
         super(name, height, heightUnit);
         this.type = THE_PALM;
     }
+    
     //v Polymorfa anrop v
     @Override
     public void calcAmount() {
         fluidAmount = TAP_WATER.getFormula()*height*toMeter();
     }
+    
     @Override
     public String getDiet() {
         return name + " behöver " + fluidAmount +
