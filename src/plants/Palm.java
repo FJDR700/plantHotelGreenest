@@ -16,6 +16,4 @@ public class Palm extends Plant {
         return name + " behöver " + fluidAmount +
                 " liter " + TAP_WATER +" per dag.";
     }
-    //Metoderna efter palmtyp kommer att ta
-    //del av polymorfa anrop i Main-klassen.
 }
