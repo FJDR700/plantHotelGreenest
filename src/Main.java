@@ -16,7 +16,7 @@ class Main {
         while (stayInHotel) {
             System.out.println(TextList.HOTEL_NAME); //Enum
             for (var checklist : pottedPlants) {System.out.println(checklist);}
-            System.out.print(TextList.REQUEST_A_PLANT); //Enum
+            System.out.print(TextList.REQUEST_A_PLANT);
             String name = scan.nextLine().trim().toLowerCase();
 
             boolean noPottetPlant = true;
@@ -29,7 +29,7 @@ class Main {
                 else if (name.isBlank()) stayInHotel = false;
             }
             if (noPottetPlant && stayInHotel)
-                System.out.println(TextList.ERROR_MESSAGE); //Enum
+                System.out.println(TextList.ERROR_MESSAGE);
             if (stayInHotel) scan.nextLine();
         }
     }
