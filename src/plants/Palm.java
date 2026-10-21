@@ -10,7 +10,7 @@ public class Palm extends Plant {
         this.type = THE_PALM;
     }
     
-    //v Del av polymorfa anrop v
+    //v Del av polymorfa anrop och interface v
     @Override
     public void calcAmount() {
         fluidAmount = TAP_WATER.getFormula()*height*toMeter();
